@@ -38,18 +38,18 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="py-16 sm:py-24 bg-white">
+    <div className="py-16 sm:py-24 bg-background">
       <div className="max-w-5xl mx-auto px-6 sm:px-8 space-y-16">
         {/* Header */}
         <div className="space-y-4 max-w-2xl">
-          <div className="text-[11px] uppercase tracking-[0.2em] font-mono font-bold text-orange-600">Portfolio</div>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 leading-tight">
+          <div className="text-[11px] uppercase tracking-[0.2em] font-mono font-bold text-orange-500">Portfolio</div>
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-tight">
             Selected projects &{" "}
-            <em className="font-serif italic font-normal text-orange-600">
+            <em className="font-serif italic font-normal text-orange-500">
               open source work.
             </em>
           </h1>
-          <p className="text-gray-500 text-base leading-relaxed">
+          <p className="text-zinc-400 text-base leading-relaxed">
             A look at full-stack applications and custom workflow integrations I have built independently outside my corporate enterprise roles.
           </p>
         </div>
@@ -59,41 +59,41 @@ export default function Portfolio() {
           {projects.map((project, idx) => (
             <div
               key={idx}
-              className="p-8 rounded-[2.5rem] border border-gray-100 bg-gray-50/20 flex flex-col justify-between hover:shadow-md transition-shadow duration-300 h-full space-y-8"
+              className="p-8 rounded-[2.5rem] border border-zinc-900 bg-zinc-900/30 hover:bg-zinc-900/50 flex flex-col justify-between transition-colors duration-300 h-full space-y-8"
             >
               <div className="space-y-6">
                 <div className="flex justify-between items-start gap-4">
                   <div>
-                    <h2 className="text-xl font-bold text-gray-900 leading-tight">{project.title}</h2>
-                    <p className="text-xs text-orange-600 font-serif italic mt-1">{project.tagline}</p>
+                    <h2 className="text-xl font-bold text-white leading-tight">{project.title}</h2>
+                    <p className="text-xs text-orange-500 font-serif italic mt-1">{project.tagline}</p>
                   </div>
                   <a
                     href={project.link}
                     target="_blank"
                     rel="noreferrer"
-                    className="w-10 h-10 rounded-full border border-gray-100 hover:bg-gray-100 flex items-center justify-center shrink-0 transition-colors duration-300"
+                    className="w-10 h-10 rounded-full border border-zinc-800 hover:bg-zinc-900 flex items-center justify-center shrink-0 transition-colors duration-300"
                   >
-                    <IconBrandGithub size={18} className="text-gray-700" />
+                    <IconBrandGithub size={18} className="text-zinc-300" />
                   </a>
                 </div>
 
                 <div className="space-y-4 text-xs">
                   <div>
-                    <strong className="text-gray-500 block uppercase font-mono tracking-wider mb-1">THE CHALLENGE</strong>
-                    <p className="text-gray-600 leading-relaxed">{project.challenge}</p>
+                    <strong className="text-zinc-500 block uppercase font-mono tracking-wider mb-1">THE CHALLENGE</strong>
+                    <p className="text-zinc-400 leading-relaxed">{project.challenge}</p>
                   </div>
                   <div>
-                    <strong className="text-gray-700 block uppercase font-mono tracking-wider mb-1">WHAT I BUILT</strong>
-                    <p className="text-gray-600 leading-relaxed">{project.solution}</p>
+                    <strong className="text-zinc-300 block uppercase font-mono tracking-wider mb-1">WHAT I BUILT</strong>
+                    <p className="text-zinc-400 leading-relaxed">{project.solution}</p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-gray-100/50">
+              <div className="flex flex-wrap gap-2 pt-4 border-t border-zinc-900/50">
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="text-[10px] font-mono px-3 py-1 bg-white text-gray-600 rounded border border-gray-100"
+                    className="text-[10px] font-mono px-3 py-1 bg-zinc-800 text-zinc-300 rounded border border-zinc-700"
                   >
                     {t}
                   </span>

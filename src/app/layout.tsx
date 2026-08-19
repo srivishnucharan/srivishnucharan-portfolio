@@ -33,7 +33,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="min-h-full flex flex-col bg-white text-gray-900 selection:bg-orange-200 selection:text-orange-900 antialiased"
+        className="min-h-full flex flex-col bg-background text-foreground selection:bg-orange-500/30 selection:text-white antialiased"
         suppressHydrationWarning
       >
         <div className="grain-overlay" />

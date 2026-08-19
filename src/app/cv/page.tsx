@@ -107,13 +107,13 @@ export default function CV() {
   ];
 
   return (
-    <div className="py-16 sm:py-24 bg-white">
+    <div className="py-16 sm:py-24 bg-background">
       <div className="max-w-4xl mx-auto px-6 sm:px-8 space-y-12">
         {/* Header Block */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-8 border-b border-gray-100">
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-8 border-b border-zinc-900">
           <div className="space-y-2">
-            <h1 className="text-3xl font-bold tracking-tight text-gray-900">Srivishnu Charan Avasarala</h1>
-            <p className="text-sm font-semibold text-orange-600 font-mono uppercase tracking-wider">
+            <h1 className="text-3xl font-bold tracking-tight text-white">Srivishnu Charan Avasarala</h1>
+            <p className="text-sm font-semibold text-orange-500 font-mono uppercase tracking-wider">
               AI Generalist | Enterprise Transformation | Platform Modernization
             </p>
           </div>
@@ -122,7 +122,7 @@ export default function CV() {
               href="https://drive.google.com/drive/folders/1mBRaAoi2EEuZSkgJzIfdVoHo0DaMhR2U?usp=sharing"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 text-gray-700 font-semibold text-xs px-5 py-2.5 transition-all duration-200 hover:scale-105"
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900/50 text-zinc-300 font-semibold text-xs px-5 py-2.5 transition-all duration-200 hover:scale-105"
             >
               Download PDF CV <IconDownload size={14} />
             </a>
@@ -130,18 +130,18 @@ export default function CV() {
         </div>
 
         {/* Contact Strip */}
-        <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-gray-500 font-mono">
-          <a href="mailto:srivishnu.charan@gmail.com" className="hover:text-orange-600 flex items-center gap-1.5">
+        <div className="flex flex-wrap gap-x-6 gap-y-3 text-xs text-zinc-500 font-mono">
+          <a href="mailto:srivishnu.charan@gmail.com" className="hover:text-orange-500 flex items-center gap-1.5">
             <IconMail size={14} /> srivishnu.charan@gmail.com
           </a>
-          <a href="tel:+918106016744" className="hover:text-orange-600 flex items-center gap-1.5">
+          <a href="tel:+918106016744" className="hover:text-orange-500 flex items-center gap-1.5">
             <IconPhone size={14} /> +91 8106016744
           </a>
           <a
             href="https://www.linkedin.com/in/srivishnucharan/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-orange-600 flex items-center gap-1.5"
+            className="hover:text-orange-500 flex items-center gap-1.5"
           >
             <IconBrandLinkedin size={14} /> LinkedIn Profile
           </a>
@@ -149,7 +149,7 @@ export default function CV() {
             href="https://github.com/srivishnucharan/"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-orange-600 flex items-center gap-1.5"
+            className="hover:text-orange-500 flex items-center gap-1.5"
           >
             <IconBrandGithub size={14} /> GitHub Profile
           </a>
@@ -157,26 +157,26 @@ export default function CV() {
 
         {/* Summary */}
         <div className="space-y-3">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider font-mono">Summary</h2>
-          <p className="text-sm text-gray-600 leading-relaxed">
+          <h2 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider font-mono">Summary</h2>
+          <p className="text-sm text-zinc-400 leading-relaxed">
             Technology leader with 23 years of experience leading Project Management, Quality Engineering, IT Operations, and Software Development. Dedicated to AI-led transformation, including managing multi-million-dollar billing modernization initiatives, implementing autonomous Agentic SDLC pipelines, and upskilling distributed engineering organizations of 55+ members. Hands-on fluency in building full-stack web applications using React, Supabase, and AI integrations.
           </p>
         </div>
 
         {/* Experience Timeline */}
-        <div className="space-y-6 pt-6 border-t border-gray-100">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider font-mono">Professional Experience</h2>
+        <div className="space-y-6 pt-6 border-t border-zinc-900">
+          <h2 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider font-mono">Professional Experience</h2>
           <div className="space-y-10">
             {experiences.map((exp, idx) => (
               <div key={idx} className="space-y-3">
                 <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                  <h3 className="text-base font-bold text-gray-900">
-                    {exp.role} <span className="font-normal text-gray-400">at {exp.company}</span>
+                  <h3 className="text-base font-bold text-white">
+                    {exp.role} <span className="font-normal text-zinc-500">at {exp.company}</span>
                   </h3>
-                  <span className="text-xs font-mono text-gray-500">{exp.period}</span>
+                  <span className="text-xs font-mono text-zinc-500">{exp.period}</span>
                 </div>
-                <div className="text-xs text-orange-600 font-semibold">{exp.location}</div>
-                <ul className="list-disc list-outside pl-4 space-y-2 text-xs text-gray-500 leading-relaxed">
+                <div className="text-xs text-orange-500 font-semibold">{exp.location}</div>
+                <ul className="list-disc list-outside pl-4 space-y-2 text-xs text-zinc-400 leading-relaxed">
                   {exp.achievements.map((ach, aIdx) => (
                     <li key={aIdx}>{ach}</li>
                   ))}
@@ -187,44 +187,44 @@ export default function CV() {
         </div>
 
         {/* Skills */}
-        <div className="space-y-6 pt-6 border-t border-gray-100">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider font-mono">Core Skills</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-gray-600">
+        <div className="space-y-6 pt-6 border-t border-zinc-900">
+          <h2 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider font-mono">Core Skills</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-zinc-400">
             <div className="space-y-1">
-              <strong className="text-gray-900 block font-bold">Leadership & Management:</strong>
+              <strong className="text-white block font-bold">Leadership & Management:</strong>
               <p>Enterprise Transformation, Platform Modernization, Scaled Agile Framework (SAFe), GRC, Project Management, Operations Governance.</p>
             </div>
             <div className="space-y-1">
-              <strong className="text-gray-900 block font-bold">AI & Automation:</strong>
+              <strong className="text-white block font-bold">AI & Automation:</strong>
               <p>Agentic AI, Machine Learning (BERT), Model Tuning, Robotic Process Automation (RPA), UiPath, Automation Anywhere.</p>
             </div>
             <div className="space-y-1">
-              <strong className="text-gray-900 block font-bold">Technical Stack:</strong>
+              <strong className="text-white block font-bold">Technical Stack:</strong>
               <p>React, Supabase, Firebase, Docker Products, Node.js, Python Flask, REST APIs, SQL, Mainframe Migrations.</p>
             </div>
             <div className="space-y-1">
-              <strong className="text-gray-900 block font-bold">Languages:</strong>
+              <strong className="text-white block font-bold">Languages:</strong>
               <p>English (Native/Bilingual), Telugu (Native/Bilingual), Tamil (Native/Bilingual), Hindi (Limited Working), German (Elementary).</p>
             </div>
           </div>
         </div>
 
         {/* Education */}
-        <div className="space-y-6 pt-6 border-t border-gray-100">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider font-mono">Education</h2>
-          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 text-sm text-gray-600">
+        <div className="space-y-6 pt-6 border-t border-zinc-900">
+          <h2 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider font-mono">Education</h2>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 text-sm text-zinc-400">
             <div>
-              <strong className="text-gray-900 font-bold block">Bachelor of Engineering, Electronics & Communication</strong>
+              <strong className="text-white font-bold block">Bachelor of Engineering, Electronics & Communication</strong>
               <span>University of Madras</span>
             </div>
-            <span className="text-xs font-mono text-gray-500">1999 - 2003</span>
+            <span className="text-xs font-mono text-zinc-500">1999 - 2003</span>
           </div>
         </div>
 
         {/* Certifications */}
-        <div className="space-y-6 pt-6 border-t border-gray-100 pb-12">
-          <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider font-mono">Certifications</h2>
-          <ul className="list-disc list-inside space-y-2 text-xs text-gray-600">
+        <div className="space-y-6 pt-6 border-t border-zinc-900 pb-12">
+          <h2 className="text-xs font-semibold text-zinc-500 uppercase tracking-wider font-mono">Certifications</h2>
+          <ul className="list-disc list-inside space-y-2 text-xs text-zinc-400">
             <li><strong>Google AI Professional Certificate</strong> (Validation of ML model tuning and prompt engineering)</li>
             <li><strong>AA Certified Advanced RPA Professional</strong> (Automation Anywhere developer certification)</li>
           </ul>
