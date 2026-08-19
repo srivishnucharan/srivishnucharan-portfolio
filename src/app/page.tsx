@@ -312,8 +312,9 @@ export default function Home() {
               </span>
             </a>
             <a
-              href="/Profile.pdf"
-              download
+              href="https://drive.google.com/drive/folders/1mBRaAoi2EEuZSkgJzIfdVoHo0DaMhR2U?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 rounded-full border border-white/10 hover:border-white/20 hover:bg-white/5 text-white font-medium text-sm px-6 py-3 transition-all duration-300 active:scale-[0.98]"
             >
               Download CV
