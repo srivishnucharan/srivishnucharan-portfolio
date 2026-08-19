@@ -43,3 +43,8 @@ next-env.d.ts
 # local agent configs
 .agents/
 
+# local resume
+Profile.pdf
+
+
+.vercel
